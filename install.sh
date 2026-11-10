@@ -14,7 +14,7 @@ CLAUDE_CODE_DIR="${HOME}/.claude/skills"
 PI_DIR="${HOME}/.agents/skills"
 
 CLAUDE_CODE_SKILLS=("algo-sensei" "algorithm-explainer" "python-best-practices")
-PI_SKILLS=("cheat-sheet" "learning-ladder" "learn-20-hours" "find-signal" "feynman-loop" "quiz-me" "deep-learn")
+PI_SKILLS=("deep-learn")
 
 cleanup() { rm -rf "$TMP_DIR"; }
 trap cleanup EXIT
@@ -42,7 +42,7 @@ install_pi() {
   local skills=("$@")
   mkdir -p "$PI_DIR"
   for skill in "${skills[@]}"; do
-    src="$TMP_DIR/my-skills/skills/self-learning/$skill"
+    src="$TMP_DIR/my-skills/skills/deep-learn"
     if [ -d "$src" ]; then
       cp -r "$src" "$PI_DIR/"
       echo "✅ Installed pi skill: $skill → $PI_DIR/$skill"

@@ -80,7 +80,7 @@ skills/quiz-me/
 
 ### deep-learn
 
-Orchestrates the full 6-step self-learning flow in sequence: Find Signal → Learning Ladder → Learn in 20 Hours → Feynman Loop → Quiz Me → Cheat Sheet. Each step is saved to `/tmp/deep-learn-<topic>/step-N-<name>.md`.
+A guided 6-step self-learning journey for any topic: Find Signal → Learning Ladder → Learn in 20 Hours → Feynman Loop → Quiz Me → Cheat Sheet. All steps are built into one skill — each step's output is saved to `/tmp/deep-learn-<topic>/step-N-<name>.md`.
 
 ```
 skills/deep-learn/
@@ -121,9 +121,6 @@ curl -fsSL https://raw.githubusercontent.com/phuongdinh1411/my-skills/main/insta
 ```bash
 # One Claude Code skill
 curl -fsSL https://raw.githubusercontent.com/phuongdinh1411/my-skills/main/install.sh | bash -s -- --claude-code algo-sensei
-
-# One pi skill
-curl -fsSL https://raw.githubusercontent.com/phuongdinh1411/my-skills/main/install.sh | bash -s -- --pi deep-learn
 ```
 
 ---
