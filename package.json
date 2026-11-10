@@ -1,0 +1,9 @@
+{
+  "name": "my-skills",
+  "version": "1.0.0",
+  "description": "A personal collection of pi skills for self-learning and coding",
+  "keywords": ["pi-package"],
+  "pi": {
+    "skills": ["./skills"]
+  }
+}
