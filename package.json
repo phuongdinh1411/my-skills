@@ -4,6 +4,6 @@
   "description": "A personal collection of pi skills for self-learning and coding",
   "keywords": ["pi-package"],
   "pi": {
-    "skills": ["./skills"]
+    "skills": ["./skills/self-learning"]
   }
 }

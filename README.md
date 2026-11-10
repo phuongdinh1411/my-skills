@@ -101,14 +101,20 @@ cp -r my-skills/skills/algorithm-explainer ~/.claude/skills/
 cp -r my-skills/skills/algo-sensei ~/.claude/skills/
 cp -r my-skills/skills/python-best-practices ~/.claude/skills/
 
-# Self-learning skills
-cp -r my-skills/skills/deep-learn ~/.agents/skills/
-cp -r my-skills/skills/cheat-sheet ~/.agents/skills/
-cp -r my-skills/skills/learning-ladder ~/.agents/skills/
-cp -r my-skills/skills/learn-20-hours ~/.agents/skills/
-cp -r my-skills/skills/find-signal ~/.agents/skills/
-cp -r my-skills/skills/feynman-loop ~/.agents/skills/
-cp -r my-skills/skills/quiz-me ~/.agents/skills/
+# Self-learning skills (or install the whole group via pi — see below)
+cp -r my-skills/skills/self-learning/deep-learn ~/.agents/skills/
+cp -r my-skills/skills/self-learning/cheat-sheet ~/.agents/skills/
+cp -r my-skills/skills/self-learning/learning-ladder ~/.agents/skills/
+cp -r my-skills/skills/self-learning/learn-20-hours ~/.agents/skills/
+cp -r my-skills/skills/self-learning/find-signal ~/.agents/skills/
+cp -r my-skills/skills/self-learning/feynman-loop ~/.agents/skills/
+cp -r my-skills/skills/self-learning/quiz-me ~/.agents/skills/
+```
+
+#### Install self-learning skills via pi (one command)
+
+```bash
+pi install git:github.com/phuongdinh1411/my-skills
 ```
 
 ---
