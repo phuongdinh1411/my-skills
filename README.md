@@ -88,33 +88,42 @@ skills/deep-learn/
 
 ---
 
-### Installation
+## Installation
 
-To use these skills, copy the desired skill folder into your Claude Code skills directory:
+### Claude Code skills
 
 ```bash
-# Clone this repo
-git clone https://github.com/phuongdinh1411/my-skills.git
-
-# Copy a skill to your Claude Code skills directory
-cp -r my-skills/skills/algorithm-explainer ~/.claude/skills/
-cp -r my-skills/skills/algo-sensei ~/.claude/skills/
-cp -r my-skills/skills/python-best-practices ~/.claude/skills/
-
-# Self-learning skills (or install the whole group via pi — see below)
-cp -r my-skills/skills/self-learning/deep-learn ~/.agents/skills/
-cp -r my-skills/skills/self-learning/cheat-sheet ~/.agents/skills/
-cp -r my-skills/skills/self-learning/learning-ladder ~/.agents/skills/
-cp -r my-skills/skills/self-learning/learn-20-hours ~/.agents/skills/
-cp -r my-skills/skills/self-learning/find-signal ~/.agents/skills/
-cp -r my-skills/skills/self-learning/feynman-loop ~/.agents/skills/
-cp -r my-skills/skills/self-learning/quiz-me ~/.agents/skills/
+curl -fsSL https://raw.githubusercontent.com/phuongdinh1411/my-skills/main/install.sh | bash -s -- --claude-code
 ```
 
-#### Install self-learning skills via pi (one command)
+Installs `algo-sensei`, `algorithm-explainer`, and `python-best-practices` into `~/.claude/skills/`.
+
+### pi self-learning skills
 
 ```bash
+# Option A — pi package manager (recommended)
 pi install git:github.com/phuongdinh1411/my-skills
+
+# Option B — install script
+curl -fsSL https://raw.githubusercontent.com/phuongdinh1411/my-skills/main/install.sh | bash -s -- --pi
+```
+
+Installs all 7 self-learning skills into `~/.agents/skills/`.
+
+### Install everything
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/phuongdinh1411/my-skills/main/install.sh | bash -s -- --all
+```
+
+### Install a single skill
+
+```bash
+# One Claude Code skill
+curl -fsSL https://raw.githubusercontent.com/phuongdinh1411/my-skills/main/install.sh | bash -s -- --claude-code algo-sensei
+
+# One pi skill
+curl -fsSL https://raw.githubusercontent.com/phuongdinh1411/my-skills/main/install.sh | bash -s -- --pi deep-learn
 ```
 
 ---
