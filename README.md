@@ -30,6 +30,64 @@ Modern Python development patterns and best practices including core standards a
 skills/python-best-practices/
 ```
 
+### cheat-sheet
+
+Creates a one-page scannable reference card for any topic — definitions, key concepts, examples, common mistakes, and 5 rapid-fire questions.
+
+```
+skills/cheat-sheet/
+```
+
+### learning-ladder
+
+Breaks any topic into 5 progressive levels (Complete Beginner → Confident Practitioner), each with milestones, exercises, common mistakes, and self-check questions.
+
+```
+skills/learning-ladder/
+```
+
+### learn-20-hours
+
+80/20 focused study plan — 10 sessions × 2 hours each, targeting the 20% of knowledge that gives 80% of real-world results. Ends with a capstone project.
+
+```
+skills/learn-20-hours/
+```
+
+### find-signal
+
+Curates the 5 highest-quality learning resources for any topic, ranked in the best order to use them, plus a ready-made 7-day learning path.
+
+```
+skills/find-signal/
+```
+
+### feynman-loop
+
+Teaches any topic using the Feynman technique — explains simply, asks you to explain it back, identifies gaps, re-teaches only what's missing. Repeats until understanding is clean and complete.
+
+```
+skills/feynman-loop/
+```
+
+### quiz-me
+
+Runs an adaptive active-recall quiz — 10 progressive questions (beginner → expert), grades each answer, identifies exact gaps, and gives a final score with a revision plan.
+
+```
+skills/quiz-me/
+```
+
+### deep-learn
+
+Orchestrates the full 6-step self-learning flow in sequence: Find Signal → Learning Ladder → Learn in 20 Hours → Feynman Loop → Quiz Me → Cheat Sheet. Each step is saved to `/tmp/deep-learn-<topic>/step-N-<name>.md`.
+
+```
+skills/deep-learn/
+```
+
+---
+
 ### Installation
 
 To use these skills, copy the desired skill folder into your Claude Code skills directory:
@@ -42,6 +100,15 @@ git clone https://github.com/phuongdinh1411/my-skills.git
 cp -r my-skills/skills/algorithm-explainer ~/.claude/skills/
 cp -r my-skills/skills/algo-sensei ~/.claude/skills/
 cp -r my-skills/skills/python-best-practices ~/.claude/skills/
+
+# Self-learning skills
+cp -r my-skills/skills/deep-learn ~/.agents/skills/
+cp -r my-skills/skills/cheat-sheet ~/.agents/skills/
+cp -r my-skills/skills/learning-ladder ~/.agents/skills/
+cp -r my-skills/skills/learn-20-hours ~/.agents/skills/
+cp -r my-skills/skills/find-signal ~/.agents/skills/
+cp -r my-skills/skills/feynman-loop ~/.agents/skills/
+cp -r my-skills/skills/quiz-me ~/.agents/skills/
 ```
 
 ---
